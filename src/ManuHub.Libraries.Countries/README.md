@@ -1,6 +1,6 @@
 ﻿# ManuHub.Libraries.Countries
 
-![NuGet](https://img.shields.io/badge/ManuHub.Libraries.Countries-red) ![NuGet Version](https://img.shields.io/nuget/v/ManuHub.Libraries.Countries) ![NuGet Downloads](https://img.shields.io/nuget/dt/ManuHub.Libraries.Countries)
+![NuGet](https://img.shields.io/badge/ManuHub.Libraries.Countries-red) ![NuGet Version](https://img.shields.io/nuget/v/ManuHub.Libraries.Countries) ![NuGet Downloads](https://img.shields.io/nuget/dt/ManuHub.Libraries.Countries) ![.NET](https://img.shields.io/badge/.NET-Standard%202.0+%20%7C%208%20%7C%209-blueviolet)
 
 A comprehensive .NET Standard library providing detailed country data, including:
 
@@ -9,6 +9,10 @@ A comprehensive .NET Standard library providing detailed country data, including
 - International dialing (ISD) codes
 - Timezone information with human-readable UTC offsets
 - Capital cities, geographic coordinates, regions, and descriptions
+- Search and filter capabilities
+- Embedded JSON data for fast access
+- Clean `CountryResult` wrapper for success/error handling
+- Supports .NET Standard 2.0+ and .NET 8/9
 
 ## Installation
 

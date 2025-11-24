@@ -1,18 +1,27 @@
 ﻿# ManuHub.Libraries.Countries
 
-![NuGet](https://img.shields.io/badge/ManuHub.Libraries.Countries-red) ![NuGet Version](https://img.shields.io/nuget/v/ManuHub.Libraries.Countries) ![NuGet Downloads](https://img.shields.io/nuget/dt/ManuHub.Libraries.Countries) ![.NET](https://img.shields.io/badge/.NET-Standard%202.0+%20%7C%208%20%7C%209-blueviolet)
+![NuGet](https://img.shields.io/badge/ManuHub.Libraries.Countries-red) ![NuGet Version](https://img.shields.io/nuget/v/ManuHub.Libraries.Countries) ![NuGet Downloads](https://img.shields.io/nuget/dt/ManuHub.Libraries.Countries) ![.NET](https://img.shields.io/badge/.NET-Standard%202.0+%20%7C%208%20%7C%209%20%7C%2010-blueviolet)
 
-A comprehensive .NET Standard library providing detailed country data, including:
+A comprehensive and lightweight .NET Standard library providing rich, query-ready country data for any application. Perfect for global apps, onboarding flows, phone number forms, analytics dashboards, and multi-region systems.
 
+## 🌍 Features
 - Country names and emoji flags
 - ISO Alpha-2 and Alpha-3 codes
 - International dialing (ISD) codes
 - Timezone information with human-readable UTC offsets
 - Capital cities, geographic coordinates, regions, and descriptions
-- Search and filter capabilities
-- Embedded JSON data for fast access
-- Clean `CountryResult` wrapper for success/error handling
-- Supports .NET Standard 2.0+ and .NET 8/9
+- High-performance search & filtering API
+- Embedded JSON dataset for instant local access
+- Strongly-typed models and clean `CountryResult` wrapper
+- Developer Helpers (extensions, lookup helpers, timezone utilities)
+- Supports .NET Standard 2.0+ and .NET 8/9/10
+
+## ✨ Developer-Friendly
+- Easy installation via NuGet
+- Single-line lookups: FindByAlpha2("US"), FindByDialCode("+91")
+- Advanced queries using CountrySearchOptions
+- Includes timezone offset resolver (GetLocalUtcOffset)
+- Works in Blazor, ASP.NET Core, MAUI, Unity, Xamarin, background services, and more.
 
 ## Installation
 
@@ -114,10 +123,6 @@ Console.WriteLine(india);
 * Description fields for additional context
 * Search and filter by multiple criteria with caching and indexing
 * Clean `CountryResult` wrapper for success/error handling
-
-## Requirements
-
-* .NET Standard 2.0+ compatible (works in .NET Core, .NET 5+, .NET Framework 4.7.2+)
 
 ## Contributing
 

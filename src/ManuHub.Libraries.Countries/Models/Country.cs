@@ -42,13 +42,13 @@ public class Country
 
     [JsonIgnore]
     public List<string> UTCOffsets =>
-        Timezones
-            ?.Select(tz =>
+        Timezones?
+            .Select(tz =>
             {
                 try
                 {
-                    TimeZoneInfo tzInfo = TimeZoneInfo.FindSystemTimeZoneById(tz);
-                    TimeSpan offset = tzInfo.BaseUtcOffset;
+                    var tzInfo = TimeZoneInfo.FindSystemTimeZoneById(tz);
+                    var offset = tzInfo.BaseUtcOffset;
                     return $"UTC{(offset >= TimeSpan.Zero ? "+" : "-")}{offset:hh\\:mm}";
                 }
                 catch
@@ -56,9 +56,10 @@ public class Country
                     return null;
                 }
             })
-            .Where(x => x != null)
+            .OfType<string>()    // filters nulls and converts type to string (non-nullable)
             .Distinct()
-            .ToList() ?? new List<string>();
+            .ToList()
+        ?? new List<string>();
 
     public override string ToString() =>
         $"{Emoji} {Name} ({DialCode}, {UTCOffsets.FirstOrDefault()})";

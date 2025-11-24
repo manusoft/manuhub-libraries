@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net8.0;net9.0;net10.0</TargetFrameworks>
     <Nullable>enable</Nullable>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageId>ManuHub.Libraries.Countries</PackageId>
-	<Version>1.0.1</Version>
+	<Version>1.1.0</Version>
 	<Authors>Manoj Babu</Authors>
 	<Company>ManuHub</Company>
 	<Copyright>Copyright © 2025 ManuHub</Copyright>
 	<Description>Provides detailed country data including name, emoji, ISO codes, ISD, UTC offsets, capital, and region.</Description>
-	<PackageTags>Country Emoji ISD UTC ISO Metadata</PackageTags>
+	<PackageTags>Country Emoji ISD UTC ISO Metadata developer helper</PackageTags>
 	<RepositoryUrl>https://github.com/manusoft/manuhub-libraries</RepositoryUrl>
 	<PackageProjectUrl>https://github.com/manusoft/manuhub-libraries</PackageProjectUrl>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="9.0.7" />
+    <PackageReference Include="System.Text.Json" Version="10.0.0" />
   </ItemGroup>
 	
 </Project>

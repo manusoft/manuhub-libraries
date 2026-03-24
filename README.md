@@ -1,6 +1,8 @@
-# ManuHub.Libraries.Countries
+![NuGet](https://img.shields.io/badge/ManuHub.Libraries.Countries-blueviolet) 
+![NuGet Version](https://img.shields.io/nuget/v/ManuHub.Libraries.Countries) 
+![NuGet Downloads](https://img.shields.io/nuget/dt/ManuHub.Libraries.Countries)
 
-![NuGet](https://img.shields.io/badge/ManuHub.Libraries.Countries-red) ![NuGet Version](https://img.shields.io/nuget/v/ManuHub.Libraries.Countries) ![NuGet Downloads](https://img.shields.io/nuget/dt/ManuHub.Libraries.Countries)
+# ManuHub.Libraries.Countries
 
 A comprehensive .NET Standard library providing detailed country data, including:
 

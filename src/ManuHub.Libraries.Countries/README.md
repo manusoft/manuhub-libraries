@@ -1,6 +1,8 @@
 ﻿# ManuHub.Libraries.Countries
 
-![NuGet](https://img.shields.io/badge/ManuHub.Libraries.Countries-red) ![NuGet Version](https://img.shields.io/nuget/v/ManuHub.Libraries.Countries) ![NuGet Downloads](https://img.shields.io/nuget/dt/ManuHub.Libraries.Countries) ![.NET](https://img.shields.io/badge/.NET-Standard%202.0+%20%7C%208%20%7C%209%20%7C%2010-blueviolet)
+![NuGet](https://img.shields.io/badge/ManuHub.Libraries.Countries-blueviolet) 
+![NuGet Version](https://img.shields.io/nuget/v/ManuHub.Libraries.Countries) 
+![NuGet Downloads](https://img.shields.io/nuget/dt/ManuHub.Libraries.Countries) 
 
 A comprehensive and lightweight .NET Standard library providing rich, query-ready country data for any application. Perfect for global apps, onboarding flows, phone number forms, analytics dashboards, and multi-region systems.
 
@@ -14,7 +16,7 @@ A comprehensive and lightweight .NET Standard library providing rich, query-read
 - Embedded JSON dataset for instant local access
 - Strongly-typed models and clean `CountryResult` wrapper
 - Developer Helpers (extensions, lookup helpers, timezone utilities)
-- Supports .NET Standard 2.0+ and .NET 8/9/10
+- Supports .NET Standard 2.0+ to .NET 10
 
 ## ✨ Developer-Friendly
 - Easy installation via NuGet

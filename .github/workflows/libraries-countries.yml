@@ -1,0 +1,23 @@
+name: ManuHub.Libraries.Countries
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
+    - name: Restore dependencies
+      run: dotnet restore src/ManuHub.Libraries.Countries/ManuHub.Libraries.Countries.csproj
+    - name: Build
+      run: dotnet build src/ManuHub.Libraries.Countries/ManuHub.Libraries.Countries.csproj -c Release
